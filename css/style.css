@@ -129,8 +129,8 @@ main .container {
 
 .main-form {
     position: relative;
-    height: 460px;
     background-color: #4580DD;
+    min-height: 460px;
 }
 
 .blur {
@@ -139,19 +139,17 @@ main .container {
     background-size: cover;
     filter: blur(9px);
     width: 100%;
-    height: 460px;
+    min-height: 460px;
     z-index: 10;
 }
 
 .main-form form {
     position: absolute;
-    z-index: 20;
+    z-index: 2000;
     width: 100%;
     color: #fff;
     font-family: "RobotoLight";
 }
-
-.main-form form {}
 
 .form-item {
     padding-top: 30px;
@@ -451,6 +449,10 @@ legend {
     right: 0;
 }
 
+.bedrooms legend {
+    margin-top: 55px;
+}
+
 .main-form .bedrooms input {
     display: none;
 }
@@ -493,13 +495,14 @@ legend {
 
 .submit button {
     width: 100%;
-    border: 2px solid #f0f0f0;
+    border: 2px solid #012;
     border-radius: 3px;
     background-color: transparent;
     padding-top: 2px;
     padding-bottom: 5px;
     font-size: 20px;
     font-family: "RobotoMedium";
+    color: #012;
     margin-top: 15px;
     transition: 0.7s all
 }
@@ -507,4 +510,94 @@ legend {
 .submit button:hover {
     background-color: #f0f0f0;
     color: #012;
+}
+
+.cards {
+    margin-top: 0px;
+}
+
+.card {
+    background-color: #ECECEC;
+    color: #000;
+    font-family: "RobotoMedium";
+    padding-bottom: 4px;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+
+.card p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card a {
+    font: inherit;
+    text-decoration: none;
+    color: #000
+}
+
+.card a:hover {
+    color: #7FB1D0;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card span {
+    font-family: "RobotoLight";
+    margin-left: 10px;
+    float: left;
+}
+
+.raiting {
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+.raiting i {
+    color: #7FB1D0;
+    margin-left: 3px;
+}
+
+.more-and-booking {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.more-and-booking a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.more-and-booking a:hover {}
+
+.more-and-booking a:nth-of-type(1) {
+    background-color: #7FB1D0;
+}
+
+.more-and-booking a:nth-of-type(1):hover {
+    background-color: #669ec0;
+    color: #fff;
+}
+
+.more-and-booking a:nth-of-type(2) {
+    background-color: #756256;
+}
+
+.more-and-booking a:nth-of-type(2):hover {
+    background-color: #604e43;
+    color: #fff;
+}
+
+.paginator {
+    text-align: center;
 }
