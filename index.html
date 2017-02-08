@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -73,7 +74,7 @@
                             <img src="https://www.cruisegid.ru/assets/images/port-sliders/ko-samui.jpg" alt="">
                             <div class="carousel-caption">
                                 <h3>Культурный отдых</h3>
-                                <p>Мы предлагаем классные экскурсии</p>
+                                <p>Мы предлагаем экскурсии</p>
                             </div>
                         </div>
                         <div class="item">
@@ -104,7 +105,7 @@
                 <div class="main-form">
                     <div class="blur"></div>
                     <form action="">
-                        <div class="col-md-4 col-sm-4">
+                        <div class="col-md-4 col-sm-4 col-xs-12 form-item">
                             <span>Стоимость:</span>
                             <div class="price-controls clearfix">
                                 <div class="min-price">
@@ -140,6 +141,51 @@
                                 <input type="checkbox" name="" id="chong-mon">
                                 <label for="chong-mon">Чонг Мон</label>
                             </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 form-item">
+                            <div class="type-of-house">
+                                <legend>Тип дома:</legend>
+                                <input type="checkbox" name="" id="village">
+                                <label for="village">Вилла</label>
+                                <input type="checkbox" name="" id="big-village">
+                                <label for="big-village">Большая вилла</label>
+                                <input type="checkbox" name="" id="mini-village">
+                                <label for="mini-village">Неблоьшая вилла</label>
+                            </div>
+                            <div class="pool-distance">
+                                <legend>Расстояние до пляжа:</legend>
+                                <input type="checkbox" name="" id="first-line">
+                                <label for="first-line">Первая линия</label>
+                                <input type="checkbox" name="" id="second-line">
+                                <label for="second-line">До 1000 метров</label>
+                                <input type="checkbox" name="" id="third-line">
+                                <label for="third-line">До 3000 метров</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 form-item">
+                            <div class="pool">
+                                <legend>Бассейн:</legend>
+                                <input type="checkbox" name="" id="joint">
+                                <label for="joint">Общий</label>
+                                <input type="checkbox" name="" id="private">
+                                <label for="private">Приватный</label>
+                            </div>
+                            <div class="bedrooms">
+                                <legend>Количество спален:</legend>
+                                <input type="radio" name="number-of-bedrooms" id="one">
+                                <label for="one">1</label>
+                                <input type="radio" name="number-of-bedrooms" id="two">
+                                <label for="two">2</label>
+                                <input type="radio" name="number-of-bedrooms" id="three">
+                                <label for="three">3</label>
+                                <input type="radio" name="number-of-bedrooms" id="four">
+                                <label for="four">4</label>
+                                <input type="radio" name="number-of-bedrooms" id="five">
+                                <label for="five">5</label>
+                                <input type="radio" name="number-of-bedrooms" id="six">
+                                <label for="six">6</label>
+                            </div>
+                            <div class="submit"><button type="submit">Найти</button></div>
                         </div>
                     </form>
                 </div>
