@@ -41,7 +41,7 @@ body {
 }
 
 header {
-    background-color: #7FB1D0;
+    background-color: #11C8B2;
 }
 
 main .container {
@@ -62,7 +62,7 @@ main .container {
 
 .main-navigation {
     border-radius: 0;
-    background-color: #7FB1D0;
+    background-color: #11C8B2;
     border: none;
     margin: 0;
 }
@@ -80,12 +80,12 @@ main .container {
 }
 
 #bs-example-navbar-collapse-1 .dropdown.open a:focus {
-    background-color: #7FB1D0;
+    background-color: #11C8B2;
 }
 
 .main-navigation .dropdown-menu {
     box-shadow: none;
-    background-color: #7FB1D0;
+    background-color: #11C8B2;
     border: none;
     border-radius: 0;
     text-align: center;
@@ -137,9 +137,10 @@ main .container {
     position: absolute;
     background-image: url(http://besttur.net/upload/images/57c9696ddb023.jpg);
     background-size: cover;
-    filter: blur(9px);
+    filter: blur(15px);
     width: 100%;
     min-height: 460px;
+    overflow: hidden;
     z-index: 10;
 }
 
@@ -495,7 +496,7 @@ legend {
 
 .submit button {
     width: 100%;
-    border: 2px solid #012;
+    border: 2px solid #11C8B2;
     border-radius: 3px;
     background-color: transparent;
     padding-top: 2px;
@@ -508,8 +509,8 @@ legend {
 }
 
 .submit button:hover {
-    background-color: #f0f0f0;
-    color: #012;
+    background-color: #11C8B2;
+    color: #fff;
 }
 
 .cards {
@@ -523,11 +524,12 @@ legend {
     padding-bottom: 4px;
     margin-top: 30px;
     border-radius: 3px;
+    box-shadow: 0 5px 12px 5px #e2e2e2;
 }
 
 .card p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 13px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -539,16 +541,49 @@ legend {
 }
 
 .card a:hover {
-    color: #7FB1D0;
+    color: #11C8B2;
+}
+
+.card .img-link {
+    position: relative;
+}
+
+.card .img-link span {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    width: 100%;
+    display: none;
+    color: #f0f0f0;
+    font-size: 18px;
+}
+
+.card .img-link:hover span {
+    display: block;
+}
+
+.card .img-link:hover img {
+    filter: blur(5px)
 }
 
 .card img {
     width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img:hover {
+    filter: blur(5px)
 }
 
 .card span {
     font-family: "RobotoLight";
     margin-left: 10px;
+    margin-top: 10px;
     float: left;
 }
 
@@ -559,14 +594,14 @@ legend {
 }
 
 .raiting i {
-    color: #7FB1D0;
+    color: #11C8B2;
     margin-left: 3px;
 }
 
 .more-and-booking {
     margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .more-and-booking a {
@@ -581,7 +616,7 @@ legend {
 .more-and-booking a:hover {}
 
 .more-and-booking a:nth-of-type(1) {
-    background-color: #7FB1D0;
+    background-color: #11C8B2;
 }
 
 .more-and-booking a:nth-of-type(1):hover {
@@ -590,7 +625,7 @@ legend {
 }
 
 .more-and-booking a:nth-of-type(2) {
-    background-color: #756256;
+    background-color: #FBE644;
 }
 
 .more-and-booking a:nth-of-type(2):hover {
@@ -600,4 +635,96 @@ legend {
 
 .paginator {
     text-align: center;
+}
+
+.pagination {
+    border-radius: 0;
+    margin-top: 45px;
+}
+
+.pagination li a:first-child,
+.pagination li a:last-child {
+    border-radius: 0;
+}
+
+.paginator .pagination li a {
+    background-color: #11C8B2;
+    color: #f0f0f0;
+    border: none
+}
+
+.paginator .pagination li a:hover {
+    background-color: #FBE644;
+}
+
+.pagination li.active a {
+    background-color: #FBE644;
+}
+
+footer {
+    position: relative;
+    height: 200px;
+}
+
+footer iframe {
+    width: 100%;
+    position: absolute;
+    z-index: 9
+}
+
+.background {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.82);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 10
+}
+
+footer .container {
+    position: relative;
+    z-index: 20
+}
+
+footer span {
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #11C8B2;
+    font-family: "RobotoBold";
+}
+
+footer .left-footer p {
+    font-family: "RobotoLight";
+    margin-bottom: 20px;
+}
+
+footer .left-footer .social a {
+    float: left;
+}
+
+footer .left-footer .social a:hover i {
+    color: #012;
+}
+
+footer .left-footer .social a:not(:first-child) {
+    margin-left: 10px;
+}
+
+footer .left-footer .social a i {
+    padding: 10px;
+    color: #11C8B2;
+    transition: 0.5s all
+}
+
+footer .right-footer p {
+    line-height: 24px;
+    font-family: "robotoLight";
+}
+
+footer .right-footer i {
+    width: 20px;
+    margin-right: 10px;
+    color: #11C8B2;
 }
