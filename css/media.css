@@ -20,6 +20,12 @@
     .blur {
         min-height: 1240px;
     }
+    .navbar-collapse ul {
+        margin: 0;
+    }
+    .navbar-collapse ul li {
+        width: 100%;
+    }
 }
 
 
