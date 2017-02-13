@@ -49,6 +49,19 @@ main .container {
     box-shadow: 0 5px 5px 5px #e2e2e2;
 }
 
+.navbar-header .main-navigation-button {
+    border: none;
+    border-radius: 2px;
+}
+
+.navbar-header .main-navigation-button:hover {
+    background-color: transparent;
+}
+
+.navbar-header .main-navigation-button .icon-bar {
+    background-color: #FBE644;
+}
+
 .navbar-collapse ul {
     width: 100%;
 }
@@ -90,6 +103,7 @@ main .container {
     border-radius: 0;
     text-align: center;
     padding: 0;
+    z-index: 20000
 }
 
 .main-navigation .dropdown-menu li {
@@ -525,6 +539,7 @@ legend {
     margin-top: 30px;
     border-radius: 3px;
     box-shadow: 0 5px 12px 5px #e2e2e2;
+    min-height: 320px;
 }
 
 .card p {

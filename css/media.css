@@ -26,6 +26,18 @@
     .navbar-collapse ul li {
         width: 100%;
     }
+    #bs-example-navbar-collapse-1 .dropdown-menu li a {
+        padding-left: 0;
+        padding-right: 0;
+        color: #013;
+    }
+    #bs-example-navbar-collapse-1 .dropdown-menu {}
+    footer iframe {
+        height: 380px;
+    }
+    footer .background {
+        height: 380px;
+    }
 }
 
 
