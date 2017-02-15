@@ -36,7 +36,7 @@
 }
 
 body {
-    font-family: "RobotoRegular";
+    font-family: "RobotoRegular", sans-serif, "Arial";
     background-color: #F0F0F0;
 }
 
@@ -801,7 +801,7 @@ footer .right-footer i {
     z-index: 10;
     top: 50%;
     outline: none;
-    margin-top: -20px;
+    margin-top: -50px;
 }
 
 .slider-wrapper button.prev {
@@ -927,4 +927,68 @@ footer .right-footer i {
     font-size: 18px;
     line-height: 30px;
     font-family: "Robotolight", sans-serif;
+}
+
+.contacts-left p {
+    line-height: 34px;
+}
+
+.contacts-left i {
+    width: 20px;
+    color: #11C8B2;
+}
+
+.map {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.about-us h1 {
+    font-family: "RobotoLight";
+}
+
+.features .col-md-3 {
+    text-align: center;
+    cursor: default;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.features i,
+.features span {
+    display: block;
+}
+
+.features i {
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-top: 19px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #11C8B2;
+    transition: 0.5s
+}
+
+.features .col-md-3:hover i {
+    border-radius: 5px;
+}
+
+.features span:first-of-type {
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-family: "RobotoRegular";
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.features span:last-of-type {
+    font-size: 18px;
+    font-family: "RobotoLight";
 }
